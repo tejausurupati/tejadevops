@@ -1,8 +1,8 @@
 ---
-- host: all
+- hosts: all
   become: yes
   tasks:
-    - name: i want to install webserver node
+    - name: i want to install webserver on nodes
       apt:
         name: apache2
         state: present
