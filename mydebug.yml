@@ -11,3 +11,14 @@
       debug:
         msg: "{{myfirsttaskresult}}"
        
+    - name: install git
+      apt:
+        name: git
+        state: present
+      when: myfirsttaskresult.stderr==""
+    - name: install wget
+      apt:
+        name: tree
+        state: present
+      when: myfirsttaskresult.stderr!=""  
+ 
