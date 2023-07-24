@@ -5,8 +5,8 @@
   - include_tasks: myfile.yml
   - name: i want to create afile
     file:
-    path: /home/ubuntu/testfile
-    state: touch
+       path: /home/ubuntu/testfile
+       state: touch
     
 
 
