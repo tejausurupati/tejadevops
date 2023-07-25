@@ -21,6 +21,7 @@
     template:  
       src: myindex.j2
       dest: /var/www/html/index.html
+      
     notify: restartwebserver
     handlers:
   - name: restartwebserver
