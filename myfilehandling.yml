@@ -6,7 +6,7 @@
   - name: i want to install webserver
     apt:
       name: apache2
-
+    notify: restartwebserver
   - name: copy index file into node side
     copy:
       src: myindexfile
@@ -22,7 +22,7 @@
       src: myindex.j2
       dest: /var/www/html/index.html
       notify: restartwebserver
-      
+
   handlers:
   - name: restartwebserver
     service:
