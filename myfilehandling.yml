@@ -7,6 +7,7 @@
     apt:
       name: apache2
     notify: restartwebserver
+
   - name: copy index file into node side
     copy:
       src: myindexfile
@@ -27,5 +28,4 @@
   - name: restartwebserver
     service:
        name: apache2
-       state: restarted   
-
+       state: restarted  
