@@ -18,12 +18,13 @@
          url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
          dest: /home/ubuntu/apache-tomcat-10.0.20.tar.gz
          force_basic_auth: yes
-         
+    notify: restartwebserver
+
   - name: i want to copy dynamic file into nodes
     template:  
       src: myindex.j2
       dest: /var/www/html/index.html
-      notify: restartwebserver
+    notify: restartwebserver
 
   handlers:
   - name: restartwebserver
