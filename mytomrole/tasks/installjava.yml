@@ -1,8 +1,0 @@
----
-- name: update packpage
-  apt: 
-    update_cache: yes
-- mame: install java
-  apt:
-    name: default_jdk
-    state: present
