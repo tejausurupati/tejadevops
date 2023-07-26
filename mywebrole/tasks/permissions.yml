@@ -1,0 +1,4 @@
+---
+- name: grant tomcat ownership
+
+- name: give execute permissions on bin folder
