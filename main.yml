@@ -1,8 +1,7 @@
 ---
 # tasks file for mywebrole
-
+- include_tasks: myuser.yml
 - name: install webserver
   apt:
     name: apache2
     state: present
-    
