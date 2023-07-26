@@ -5,4 +5,5 @@
 - include_tasks: permissions.yml
 - include_tasks: download.yml
 - include_tasks: tomdasord.yml
+- inclu_tasks: tomstart.yml
 - include_tasks: mydeploy.yml
